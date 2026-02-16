@@ -2,7 +2,15 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] arr={3,4,565,6,6,43,2,22,3,5,6,6,7,8};
+        print(arr);
         part(arr, 0, arr.length-1);
+        print(arr);
+    }
+    public static void print(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
     }
 
     public void quickSort(int[] arr,int lo,int hi){
